@@ -1,0 +1,249 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: ThellierTool - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der Befehlzeile "midl.exe /nologo /D "NDEBUG" /tlb "Release/ThellierTool.tlb" /mktyplib203 /win32 "E:\leon\VisualC++\projects\ThellierTool\ThellierTool.odl""
+Creating command line "rc.exe /l 0x407 /fo"Release/ThellierTool.res" /i "Release" /d "NDEBUG" "E:\leon\VisualC++\projects\ThellierTool\ThellierTool.rc"" 
+Erstellen der temporären Datei  "C:\DOKUME~1\leon\LOKALE~1\Temp\RSPB1.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/ThellierTool.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\leon\VisualC++\projects\ThellierTool\ChildFrm.cpp"
+"E:\leon\VisualC++\projects\ThellierTool\CriteriaDlg.cpp"
+"E:\leon\VisualC++\projects\ThellierTool\IpFrame.cpp"
+"E:\leon\VisualC++\projects\ThellierTool\MainFrm.cpp"
+"E:\leon\VisualC++\projects\ThellierTool\ResultForm.cpp"
+"E:\leon\VisualC++\projects\ThellierTool\SrvrItem.cpp"
+"E:\leon\VisualC++\projects\ThellierTool\ThellierTool.cpp"
+"E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp"
+"E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\leon\LOKALE~1\Temp\RSPB1.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\leon\LOKALE~1\Temp\RSPB2.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/ThellierTool.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\leon\VisualC++\projects\ThellierTool\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\leon\LOKALE~1\Temp\RSPB2.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\leon\LOKALE~1\Temp\RSPB3.tmp" mit Inhalten
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/ThellierTool.pdb" /machine:I386 /out:"Release/ThellierTool.exe" 
+".\Release\ChildFrm.obj"
+".\Release\CriteriaDlg.obj"
+".\Release\IpFrame.obj"
+".\Release\MainFrm.obj"
+".\Release\ResultForm.obj"
+".\Release\SrvrItem.obj"
+".\Release\StdAfx.obj"
+".\Release\ThellierTool.obj"
+".\Release\ThellierToolDoc.obj"
+".\Release\ThellierToolView.obj"
+".\Release\ThellierTool.res"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\leon\LOKALE~1\Temp\RSPB3.tmp"
+<h3>Ausgabefenster</h3>
+Typbibliothek wird erstellt...
+Processing E:\leon\VisualC++\projects\ThellierTool\ThellierTool.odl
+ThellierTool.odl
+Processing D:\Programme\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing D:\Programme\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing D:\Programme\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing D:\Programme\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Ressourcen werden kompiliert...
+Kompilierung läuft...
+StdAfx.cpp
+Kompilierung läuft...
+ChildFrm.cpp
+CriteriaDlg.cpp
+IpFrame.cpp
+MainFrm.cpp
+ResultForm.cpp
+E:\leon\VisualC++\projects\ThellierTool\ResultForm.cpp(797) : warning C4305: 'argument' : Verkuerzung von 'const double' in 'float'
+E:\leon\VisualC++\projects\ThellierTool\ResultForm.cpp(797) : warning C4305: 'argument' : Verkuerzung von 'const double' in 'float'
+SrvrItem.cpp
+ThellierTool.cpp
+ThellierToolDoc.cpp
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(366) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(1781) : warning C4101: 'i' : Unreferenzierte lokale Variable
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2150) : warning C4244: '=' : Konvertierung von 'int' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2151) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2164) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2170) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2171) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2173) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2181) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2184) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2215) : warning C4244: '=' : Konvertierung von 'int' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2216) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolDoc.cpp(2239) : warning C4244: '=' : Konvertierung von 'double' in 'float', moeglicher Datenverlust
+ThellierToolView.cpp
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(380) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(380) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(380) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(380) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(388) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(388) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(400) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(401) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(402) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(403) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(404) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(417) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(425) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(446) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(447) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(448) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(449) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(450) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(475) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(483) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(518) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(518) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(519) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(519) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(547) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(547) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(548) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(548) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(549) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(549) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(550) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(550) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(552) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(553) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(553) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(554) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(555) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(555) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(566) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(567) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(567) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(679) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(680) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(692) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(694) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(696) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(698) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(701) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(702) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(704) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(752) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(752) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(754) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(755) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(756) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(757) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(761) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(761) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(788) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(788) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(790) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(791) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(792) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(793) : warning C4244: 'initializing' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(804) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(804) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(807) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(807) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(855) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(858) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(861) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(863) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1028) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1028) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1031) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1031) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(867) : warning C4101: 'step' : Unreferenzierte lokale Variable
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1101) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1102) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1103) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1103) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1105) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1116) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1116) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1123) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1123) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1154) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1154) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1155) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1155) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1156) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1156) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1157) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1157) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1191) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1191) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1231) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1233) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1235) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1235) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1251) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1270) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1270) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1290) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1294) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1294) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1304) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1304) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1306) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1308) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1308) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1310) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1312) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1336) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1338) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1345) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1347) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1352) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1380) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1384) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1393) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1393) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1418) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1422) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1422) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1436) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1436) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1438) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1440) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1440) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1442) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1444) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1456) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1466) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1495) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1495) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1515) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1517) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1517) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1524) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1526) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1526) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1528) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1532) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1532) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1534) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1544) : warning C4244: '=' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1555) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1581) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1581) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1601) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1603) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+E:\leon\VisualC++\projects\ThellierTool\ThellierToolView.cpp(1603) : warning C4244: 'argument' : Konvertierung von 'double' in 'int', moeglicher Datenverlust
+Generieren von Code...
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+ThellierTool.exe - 0 Fehler, 168 Warnung(en)
+</pre>
+</body>
+</html>

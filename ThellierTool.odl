@@ -1,0 +1,70 @@
+// ThellierTool.odl : Quellcode der Typbibliothek für ThellierTool.exe
+
+// Diese Datei wird vom MIDL-Compiler bearbeitet, um die
+// Typbibliothek zu erzeugen (ThellierTool.tlb).
+
+[ uuid(A85A83A4-64E3-48F9-BD6F-FD4E7574F521), version(1.0) ]
+library ThellierTool
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	
+
+	//  Primäre Dispatch-Schnittstelle für CThellierToolDoc
+	
+	[ uuid(82CA9F09-0760-4A60-B6F9-228F5277EBF9) ]
+	dispinterface IThellierTool
+	{
+		properties:
+			// HINWEIS - Der Klassen-Assistent verwaltet hier Informationen über die Eigenschaften.
+			//    Lassen Sie äußerste Vorsicht walten, falls Sie diesen Abschnitt bearbeiten.
+			//{{AFX_ODL_PROP(CThellierToolDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// HINWEIS - Der Klassen-Assistent verwaltet hier Informationen über die Methoden.
+			//    Lassen Sie äußerste Vorsicht walten, falls Sie diesen Abschnitt bearbeiten.
+			//{{AFX_ODL_METHOD(CThellierToolDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Klassen-Informationen für CThellierToolDoc
+	
+	[ uuid(64EC95E4-D441-11D5-A5A1-00105AD56AB0) ]
+	coclass Document
+	{
+		[default] dispinterface IThellierTool;
+	};
+
+
+	//  Primary dispatch interface for CResultForm
+	
+	[ uuid(9BCCB409-4142-44E7-954A-6BA621126818) ]
+	dispinterface IResultForm
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CResultForm)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CResultForm)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CResultForm
+
+	[ uuid(42C6D7EB-ABCF-4787-8C4D-BB578B1282E2) ]
+	coclass ResultForm
+	{
+		[default] dispinterface IResultForm;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

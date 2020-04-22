@@ -1,0 +1,30 @@
+REGEDIT
+;   Diese .REG-Datei kann von Ihrem SETUP-Programm verwendet werden.
+;   Falls kein SETUP-Programm verfügbar ist, werden die unten stehenden Einträge
+;   automatisch in InitInstance registriert, mit einem Aufruf an 
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.tdt = ThellierTool.Document
+HKEY_CLASSES_ROOT\ThellierTool.Document\shell\open\command = THELLIERTOOL.EXE %1
+HKEY_CLASSES_ROOT\ThellierTool.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\ThellierTool.Document\shell\open\ddeexec\application = THELLIERTOOL
+    ; Hinweis: die Anwendung ist optional
+    ;  (als Standardwert wird der Name der Anwendung in "command" verwendet)
+
+HKEY_CLASSES_ROOT\ThellierTool.Document = Thellier Document
+HKEY_CLASSES_ROOT\ThellierTool.Document\protocol\StdFileEditing\server = THELLIERTOOL.EXE
+HKEY_CLASSES_ROOT\ThellierTool.Document\protocol\StdFileEditing\verb\0 = &Edit
+HKEY_CLASSES_ROOT\ThellierTool.Document\Insertable =
+HKEY_CLASSES_ROOT\ThellierTool.Document\CLSID = {64EC95E4-D441-11D5-A5A1-00105AD56AB0}
+
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0} = Thellier Document
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\DefaultIcon = THELLIERTOOL.EXE,1
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\LocalServer32 = THELLIERTOOL.EXE
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\ProgId = ThellierTool.Document
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\MiscStatus = 32
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\AuxUserType\3 = ThellierTool
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\AuxUserType\2 = Thellier
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\Insertable = 
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\verb\1 = &Öffnen,0,2
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\verb\0 = &Bearbeiten,0,2
+HKEY_CLASSES_ROOT\CLSID\{64EC95E4-D441-11D5-A5A1-00105AD56AB0}\InprocHandler32 = ole32.dll

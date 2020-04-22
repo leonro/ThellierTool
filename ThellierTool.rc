@@ -1,0 +1,932 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ThellierTool.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""afxres.rc""         // Standardkomponenten\r\n"
+    "#include ""afxprint.rc""       // Ressourcen für Drucken/Seitenansicht\r\n"
+    "#include ""afxolesv.rc""       // OLE-Server-Ressourcen\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_RESULTFORM_TMPL     ICON    DISCARDABLE     "mdi.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_RESULTFORM_TMPL MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu\tStrg+N",                ID_FILE_NEW
+        MENUITEM "Ö&ffnen...\tStrg+O",          ID_FILE_OPEN
+        MENUITEM "S&chließen",                  ID_FILE_CLOSE
+        MENUITEM "&Speichern\tStrg+S",          ID_FILE_SAVE
+        MENUITEM "Speichern &unter...",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Drucken...\tStrg+P",         ID_FILE_PRINT
+        MENUITEM "Seitenansic&ht",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "D&ruckereinrichtung...",      ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Zuletzt geöffnete Datei",     ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Bearbeiten"
+    BEGIN
+        MENUITEM "&Rückgängig\tStrg+Z",         ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Ausschneiden\tStrg+X",       ID_EDIT_CUT
+        MENUITEM "&Kopieren\tStrg+C",           ID_EDIT_COPY
+        MENUITEM "Ein&fügen\tStrg+V",           ID_EDIT_PASTE
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Symbolleiste",               ID_VIEW_TOOLBAR
+        MENUITEM "S&tatusleiste",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Neues Fenster",              ID_WINDOW_NEW
+        MENUITEM "Überla&ppend",                ID_WINDOW_CASCADE
+        MENUITEM "&Teilen",                     ID_WINDOW_TILE_HORZ
+        MENUITEM "&Symbole anordnen",           ID_WINDOW_ARRANGE
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&Info zu MDI1...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RESULTFORM_FORM DIALOGEX 0, 0, 296, 401
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_RAWDATA_LIST,10,250,135,115,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LABFIELD_EDIT,70,20,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SAMPLENAME_EDIT,85,235,30,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Arai Plot",IDC_THELLIERPLOT_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,10,130,42,10
+    CONTROL         "Zij Plot",IDC_ZIJPLOT_RADIO,"Button",BS_AUTORADIOBUTTON,
+                    10,165,37,10
+    CONTROL         "Decay Plot",IDC_DECAYPLOT_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,10,185,51,10
+    CONTROL         "Additional Plots",IDC_MDPLOT_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,10,200,64,10
+    CONTROL         "All Plots",IDC_ALLPLOTS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,10,215,41,10
+    CONTROL         "Core co.",IDC_CORECO_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,75,155,43,10
+    CONTROL         "Geo",IDC_GEOCO_RADIO,"Button",BS_AUTORADIOBUTTON,75,165,
+                    29,10
+    CONTROL         "Bedding",IDC_BEDCO_RADIO,"Button",BS_AUTORADIOBUTTON,75,
+                    175,42,10
+    GROUPBOX        "Input",IDC_STATIC,5,5,145,105
+    GROUPBOX        "Results",IDC_STATIC,155,5,135,325
+    GROUPBOX        "View options",IDC_STATIC,5,110,145,120
+    CONTROL         "Laboratory field:",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,15,20,51,8,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Temperature Range:",IDC_STATIC,15,65,66,8
+    LTEXT           "uT",IDC_STATIC,95,20,10,8
+    LTEXT           "Sample:",IDC_STATIC,55,235,26,8
+    LTEXT           "Paleointensity:",IDC_STATIC,160,20,46,8
+    GROUPBOX        "Data",IDC_STATIC,5,230,145,165
+    CONTROL         "automatic calculation",IDC_AUTO_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,35,35,83,10
+    CONTROL         "select temperature range",IDC_MANUELL_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,35,55,94,10
+    EDITTEXT        IDC_TMIN_EDIT,35,75,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TMAX_EDIT,85,75,25,12,ES_AUTOHSCROLL
+    LTEXT           "from",IDC_STATIC,20,76,14,8
+    LTEXT           "°C  to",IDC_STATIC,62,76,18,8
+    LTEXT           "°C",IDC_STATIC,112,76,8,8
+    PUSHBUTTON      "Apply changes",IDC_APPLY_BUTTON,90,90,55,14
+    CONTROL         "show AC",IDC_AC_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,75,120,44,10
+    CONTROL         "check corrected",IDC_CORR_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,75,130,68,10
+    CONTROL         "only z-comp.",IDC_ZONLY_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,75,140,55,10
+    EDITTEXT        IDC_PALINT_EDIT,205,20,25,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    LTEXT           "+/-",IDC_STATIC,235,20,10,8
+    LTEXT           "N:",IDC_STATIC,165,40,8,8
+    LTEXT           "slope:",IDC_STATIC,195,40,20,8
+    LTEXT           "Std/slope:",IDC_STATIC,221,40,34,8
+    LTEXT           "class:",IDC_STATIC,255,115,19,8
+    LTEXT           "uT",IDC_STATIC,275,20,10,8
+    EDITTEXT        IDC_SD_EDIT,245,20,25,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_N_EDIT,165,50,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SLOPE_EDIT,195,50,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STDSLOPE_EDIT,225,50,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CLASS_EDIT,255,125,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_F_EDIT,165,75,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_G_EDIT,195,75,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Q_EDIT,225,75,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_W_EDIT,255,75,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TRM_EDIT,165,100,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NRMT_EDIT,195,100,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CKERROR_EDIT,225,100,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CKDIFF_EDIT,255,100,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_DEC_EDIT,195,150,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_INC_EDIT,225,150,25,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "f:",IDC_STATIC,165,65,8,8
+    LTEXT           "g:",IDC_STATIC,195,65,8,8
+    LTEXT           "q:",IDC_STATIC,225,65,8,8
+    LTEXT           "w:",IDC_STATIC,255,65,8,8
+    LISTBOX         IDC_MDTAIL_LIST,155,215,135,51,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAD_EDIT,255,150,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TYPE_EDIT,255,50,25,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "TRM",IDC_STATIC,165,90,17,8
+    LTEXT           "NRMt",IDC_STATIC,195,90,20,8
+    LTEXT           "d(CK)",IDC_STATIC,225,90,18,8
+    LTEXT           "d(pal)",IDC_STATIC,255,90,18,8
+    LTEXT           "Dec",IDC_STATIC,195,140,14,8
+    LTEXT           "Inc",IDC_STATIC,225,140,11,8
+    LTEXT           "MAD",IDC_STATIC,255,140,17,8
+    LTEXT           "Type",IDC_STATIC,255,40,17,8
+    LTEXT           "Additivity checks:",IDC_STATIC,160,295,56,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_ACCHECK_EDIT,160,314,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "d(AC)",IDC_STATIC,160,305,18,8
+    PUSHBUTTON      "Save results",IDC_SAVERESULTS_BUTTON,195,335,55,20,0,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_TRERROR_EDIT,160,275,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "d(TR)",IDC_STATIC,160,265,19,8
+    PUSHBUTTON      "View raw data",IDC_NOTEPAD_BUTTON,160,375,60,14
+    CONTROL         "include check correction",IDC_AUTOCK_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,50,45,94,10
+    PUSHBUTTON      "Alteration analysis",IDC_TEST_BUTTON,225,375,60,14
+    GROUPBOX        "Additional Tools",IDC_STATIC,155,360,135,35
+    GROUPBOX        "",IDC_STATIC,155,190,135,105
+    LTEXT           "Repeated demagnetizations:",IDC_STATIC,160,195,91,8
+    LTEXT           "T",IDC_STATIC,170,206,8,8
+    LTEXT           "d(theta)",IDC_STATIC,185,206,25,8
+    EDITTEXT        IDC_ALPHA_EDIT,195,125,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_DRAT_EDIT,165,125,25,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Alpha",IDC_ALPHA_STATIC,195,115,19,8
+    LTEXT           "Drat",IDC_STATIC,165,115,14,8
+    EDITTEXT        IDC_TSTAR_EDIT,250,275,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "d(t*)",IDC_STATIC,250,265,14,8
+    LTEXT           "d(Inc)",IDC_STATIC,215,206,19,8
+    LTEXT           "d(t*)",IDC_STATIC,240,206,14,8
+    LTEXT           "d(TR)",IDC_STATIC,260,206,19,8
+    LTEXT           "Anchored",IDC_STATIC,160,150,32,8
+    EDITTEXT        IDC_DEC_NA_EDIT,195,175,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_INC_NA_EDIT,225,175,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_MAD_NA_EDIT,255,175,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dec'",IDC_STATIC,195,165,16,8
+    LTEXT           "Inc'",IDC_STATIC,225,165,12,8
+    LTEXT           "MAD'",IDC_STATIC,255,165,18,8
+    LTEXT           "anchored",IDC_STATIC,160,177,31,8
+    LTEXT           "Not-",IDC_STATIC,160,170,14,8
+    EDITTEXT        IDC_ALTCHECKMETHOD_EDIT,10,380,135,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Method of alteration check:",IDC_STATIC,10,370,88,8
+END
+
+IDD_CRITERIA_DIALOG DIALOGEX 0, 0, 467, 346
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Criteria"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,330,320,50,14
+    GROUPBOX        "Class A",IDC_STATIC,10,5,155,330
+    GROUPBOX        "Class B",IDC_STATIC,170,5,155,330
+    EDITTEXT        IDC_N_CRIT_A_EDIT,130,30,25,12,ES_AUTOHSCROLL
+    LTEXT           "Number of points (N) >=",IDC_STATIC,30,30,76,8
+    LTEXT           "Fraction of NRM (f) >=",IDC_STATIC,30,60,71,8
+    LTEXT           "Standard deviation (Std) >=",IDC_STATIC,30,45,87,8
+    LTEXT           "Quality factor (q) >=",IDC_STATIC,30,75,62,8
+    LTEXT           "Relative check error: d(CK) <=",IDC_STATIC,30,176,96,8
+    LTEXT           "Cumulative check diff: d(pal) <=",IDC_STATIC,30,190,100,
+                    8
+    LTEXT           "Normalized tail of pTRM: d(t*) <=",IDC_STATIC,30,240,
+                    103,8
+    LTEXT           "Relative Z-comp. diff <=",IDC_ZDIFF_A_STATIC,30,254,76,
+                    8
+    LTEXT           "Relative intensity diff <=",IDC_STATIC,30,270,76,8
+    GROUPBOX        "Linear fit criteria",IDC_STATIC,15,15,145,75,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "Alteration criteria",IDC_STATIC,15,160,145,60,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "Repeated demagnetization steps",IDC_STATIC,15,225,145,
+                    60,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "Additivity checks",IDC_STATIC,15,290,145,39,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "Automatic calculation parameter",IDC_STATIC,330,110,125,
+                    115
+    LTEXT           "Linear fit determination by maximizing",IDC_STATIC,335,
+                    125,116,8
+    CONTROL         "weighting parameter (w)",IDC_WEIGHT_W_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,345,135,91,10
+    CONTROL         "quality factor (q)",IDC_WEIGHT_Q_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,345,145,66,10
+    LTEXT           "Number of points (N) >=",IDC_STATIC,190,30,76,8
+    LTEXT           "Fraction of NRM (f) >=",IDC_STATIC,190,60,71,8
+    LTEXT           "Standard deviation (Std) >=",IDC_STATIC,190,45,87,8
+    LTEXT           "Quality factor (q) >=",IDC_STATIC,190,75,62,8
+    LTEXT           "Relative check error: d(CK) <=",IDC_STATIC,190,176,96,8
+    LTEXT           "Cumulative check diff: d(pal) <=",IDC_STATIC,190,190,
+                    100,8
+    GROUPBOX        "Linear fit criteria",IDC_STATIC,175,15,145,75,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "Alteration criteria",IDC_STATIC,175,160,145,60,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "Repeated demagnetization steps",IDC_STATIC,175,225,145,
+                    60,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "Additivity checks",IDC_STATIC,175,290,145,39,0,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_F_CRIT_A_EDIT,130,60,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STD_CRIT_A_EDIT,130,45,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q_CRIT_A_EDIT,130,75,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CKERROR_CRIT_A_EDIT,130,176,25,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Apply",IDC_APPLY_BUTTON,405,320,50,14
+    GROUPBOX        "Directional criteria",IDC_STATIC,15,95,145,60,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "MAD (anchored) <=",IDC_STATIC,30,110,63,8
+    GROUPBOX        "Directional criteria",IDC_STATIC,175,95,145,60,0,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_MAD_CRIT_A_EDIT,130,110,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_N_CRIT_B_EDIT,290,30,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F_CRIT_B_EDIT,290,60,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STD_CRIT_B_EDIT,290,45,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q_CRIT_B_EDIT,290,75,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CKERROR_CRIT_B_EDIT,290,176,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAD_CRIT_B_EDIT,290,110,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CKDIFF_CRIT_A_EDIT,130,190,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HDIFF_CRIT_A_EDIT,135,239,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZDIFF_CRIT_A_EDIT,130,254,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RDIFF_CRIT_A_EDIT,130,269,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACERROR_CRIT_A_EDIT,130,305,25,12,ES_AUTOHSCROLL
+    LTEXT           "Relative AC error: d(AC) <=",IDC_STATIC,30,305,86,8
+    LTEXT           "Relative AC error: d(AC) <=",IDC_STATIC,190,305,86,8
+    LTEXT           "Relative Z-comp. diff <=",IDC_ZDIFF_B_STATIC,190,253,76,
+                    8
+    LTEXT           "Relative intensity diff <=",IDC_STATIC,190,269,76,8
+    EDITTEXT        IDC_CKDIFF_CRIT_B_EDIT,290,190,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HDIFF_CRIT_B_EDIT,295,239,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZDIFF_CRIT_B_EDIT,290,254,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RDIFF_CRIT_B_EDIT,290,269,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACERROR_CRIT_B_EDIT,290,305,25,12,ES_AUTOHSCROLL
+    GROUPBOX        "Class C",IDC_STATIC,330,5,125,45
+    LTEXT           "Manuel determination which does",IDC_STATIC,340,20,106,
+                    8
+    LTEXT           "not satisfy class A or B criteria.",IDC_STATIC,340,30,
+                    96,8
+    LTEXT           "Allow automatic calculation with",IDC_STATIC,335,170,
+                    101,8
+    LTEXT           "check correction in case of MT4:",IDC_STATIC,335,180,
+                    106,8
+    CONTROL         "Enable as option for automatic",IDC_AUTOCK_YES_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,340,190,111,10
+    LTEXT           "calculation",IDC_STATIC,355,200,35,8
+    GROUPBOX        "General View Options",IDC_STATIC,330,230,125,65
+    CONTROL         "normalize both axes separately",IDC_SEPAXES_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,335,255,112,10
+    CONTROL         "normalize both axes equally",IDC_EQUALAXES_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,335,265,102,10
+    LTEXT           "Arai diagram:",IDC_STATIC,335,245,42,8
+    LTEXT           "Alpha <=",IDC_STATIC,30,140,29,8
+    LTEXT           "Alpha <=",IDC_STATIC,190,140,29,8
+    EDITTEXT        IDC_ALPHA_CRIT_A_EDIT,130,140,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALPHA_CRIT_B_EDIT,290,140,25,12,ES_AUTOHSCROLL
+    LTEXT           "Difference ratio (Drat) <=",IDC_STATIC,30,205,78,8
+    LTEXT           "Difference ratio (Drat) <=",IDC_STATIC,190,205,78,8
+    EDITTEXT        IDC_DRAT_CRIT_A_EDIT,130,205,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DRAT_CRIT_B_EDIT,290,205,25,12,ES_AUTOHSCROLL
+    LTEXT           "Normalized tail of pTRM: d(t*) <=",IDC_STATIC,190,240,
+                    103,8
+    PUSHBUTTON      "Load",IDC_CRILOAD_BUTTON,335,85,30,14
+    PUSHBUTTON      "Save",IDC_CRISAVE_BUTTON,375,85,30,14
+    GROUPBOX        "Criteria file",IDC_STATIC,330,60,125,45
+    EDITTEXT        IDC_CRIPATH_EDIT,335,70,110,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Default",IDC_CRIDEFAULT_BUTTON,415,85,30,14
+    LTEXT           "MAD (anchored) <=",IDC_STATIC,190,110,63,8
+    LTEXT           "MAD' (not-anchored) <=",IDC_STATIC,30,125,76,8
+    LTEXT           "MAD' (not-anchored) <=",IDC_STATIC,190,125,76,8
+    EDITTEXT        IDC_MAD_AN_CRIT_A_EDIT,130,125,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAD_AN_CRIT_B_EDIT,290,125,25,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RESULTFORM_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDD_CRITERIA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 460
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 339
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ThellierTool.ico"
+IDR_THELLITYPE          ICON    DISCARDABLE     "res\\ThellierToolDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Criteria",                   ID_CRITERIA
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ThellierTool...",      ID_APP_ABOUT
+    END
+END
+
+IDR_THELLITYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Graph",                 ID_FILE_SAVEGRAPH
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Criteria",                   ID_CRITERIA
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ThellierTool...",      ID_APP_ABOUT
+    END
+END
+
+IDR_THELLITYPE_SRVR_EMB MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Update\tCtrl+S",             ID_FILE_UPDATE
+        MENUITEM "Save Copy &As...",            ID_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ThellierTool...",      ID_APP_ABOUT
+    END
+END
+
+IDR_THELLITYPE_SRVR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ThellierTool...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ThellierTool"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ThellierTool Version 4.12",IDC_STATIC,40,10,129,8,
+                    SS_NOPREFIX
+    LTEXT           "written by Roman Leonhardt (2005-2008)",IDC_STATIC,40,
+                    25,188,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_THELLITYPE_SRVR_IP  BITMAP  MOVEABLE PURE   "res\\IToolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVEGRAPH
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CRITERIA
+END
+
+IDR_THELLITYPE_SRVR_IP TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+IDR_THELLITYPE_SRVR_IP ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,    VIRTKEY, NOINVERT
+END
+
+IDR_THELLITYPE_SRVR_EMB ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_UPDATE,         VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ThellierTool MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ThellierTool\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ThellierTool.EXE\0"
+            VALUE "ProductName", "ThellierTool Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDR_RESULTFORM_TMPL     "\nResultForm\nResult\nResult Dateien (*.res)\n.res\nResultForm.Document\nResult Dokument"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "ThellierTool"
+    IDR_THELLITYPE          "\nThelli\nThellier\nThellier Files (*.tdt)\n.tdt\nThellierTool.Document\nThellier Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ThellierTool"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_UPDATE          "Update the container to show any changes\nUpdate"
+    ID_FILE_SAVE_COPY_AS    "Save a copy of the active document with a new name\nSave Copy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CRITERIA             "modify calculation criteria"
+    ID_HELP_MANUALPDF       "opens the manual"
+    ID_FILE_SAVEGRAPH       "Save Plot as enhanced metafile\n"
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ThellierTool.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "afxres.rc"         // Standardkomponenten
+#include "afxprint.rc"       // Ressourcen für Drucken/Seitenansicht
+#include "afxolesv.rc"       // OLE-Server-Ressourcen
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
